@@ -413,9 +413,9 @@ a, a:hover {
 
 #desktopNav {
 	position: fixed;
-	right: -300px;
+	right: -250px;
 	top: 0;
-	width: 300px;
+	width: 250px;
 	height: 100%;
 	background: #fff;
 	z-index: 500;
@@ -426,7 +426,7 @@ a, a:hover {
 #desktopNav a {
 	position: relative;
 	top: 0;
-	font-size: 3em;
+	font-size: 40px;
 	color: #333 !important;
 }
 
@@ -448,7 +448,7 @@ a, a:hover {
 
 #desktopNav .bottom p{
 	margin-bottom: 0 !important;
-	font-size: 1.3em !important;
+	font-size: 20px !important;
 }
 
 .blurPage {
@@ -502,7 +502,7 @@ a, a:hover {
 	left: 40%;
 	margin: 0;
 	font-family: 'Pacifico', sans-serif;
-	font-size: 6em;
+	font-size: 90px;
 	min-width:50%;
 	animation-duration: 1.2s;
 }
@@ -510,7 +510,7 @@ a, a:hover {
 #titleDesc {
 	opacity: 0;
 	transition: all 1.5s;
-	font-size: 2em;
+	font-size: 35px;
 	animation-duration: 1.5s;
 	margin: 0;
 	position: absolute;
@@ -584,11 +584,11 @@ a, a:hover {
 		position: absolute;
 		top:25%;
 		left: 10%;
-		font-size: 4em;
+		font-size: 60px;
 	}
 	
 	#titleDesc {
-		font-size: 1.5em;
+		font-size: 25px;
 		left: 20%;
 	}
 	
@@ -596,6 +596,24 @@ a, a:hover {
 		margin-left: 0 !important;
 		margin-right: 0 !important;
 		width: 100% !important;
+	}
+	
+	.footer span {
+		font-size: 18px !important;
+	}
+}
+
+@media(max-width:800px) {
+	#titleDiv {
+		position: absolute;
+		top:25%;
+		left: 10%;
+		font-size: 45px;
+	}
+	
+	#titleDesc {
+		font-size: 22px;
+		left: 20%;
 	}
 }
 
@@ -760,13 +778,32 @@ a, a:hover {
 	opacity:0;
 }
 
-@media(max-width: 800px) {		
+@media(max-width: 1200px) {		
 	#whoAmI {
-		font-size: 4em !important;
+		font-size: 3em !important;
 	}
 	
 	#aboutPage .descTitle, #aboutPage h2 {
-		font-size: 1.8em !important;
+		font-size: 1.4em !important;
+	}
+	
+	#aboutPage p, #aboutPage span, #aboutPage h4 {
+		font-size: 22px !important;
+	}
+}
+
+
+@media(max-width: 800px) {		
+	#whoAmI {
+		font-size: 2.5em !important;
+	}
+	
+	#aboutPage .descTitle, #aboutPage h2 {
+		font-size: 23px !important;
+	}
+	
+	#aboutPage p, #aboutPage span, #aboutPage h4 {
+		font-size: 18px !important;
 	}
 }
 
@@ -944,6 +981,10 @@ a, a:hover {
 	.containerPortfolio .projSnip h3 {
 		font-size: 1.1em !important;
 	}
+	
+	#projectPage h1 {
+		font-size: 3em !important;
+	}
 }
 
 /* the size where there's 1 flex item per column */
@@ -994,9 +1035,9 @@ a, a:hover {
 	}
 }
 
-@media(max-width: 800px) {
-	#portfolio	{
-		font-size: 4em !important;
+@media(max-width: 800px) {	
+	#projectPage h1 {
+		font-size: 2.5em !important;
 	}
 	.containerPortfolioMobile .projSnip p {
 		font-size: 1.2em;
@@ -1118,19 +1159,31 @@ a, a:hover {
 	width: 100% !important;
 }
 
-@media(max-width: 1400px) {
+@media(max-width: 1200px) {
 	.projectDetail {
 		padding: 50px 100px;
 	}
+	
+	.projectDetail h1 {
+		font-size: 30px !important;
+	}
 }
 
-@media(max-width: 800px) {
-	#portfolio	{
-		font-size: 4em !important;
+@media(max-width: 800px) {	
+	.projectDetail {
+		padding: 30px 0px;
 	}
 	
-	.projectDetail {
-		padding: 30px;
+	.projectDetail h1 {
+		font-size: 24px !important;
+	}
+	
+	.projectDetail p {
+		font-size: 18px !important;
+	}
+	
+	.projectDetail .tags {
+		padding: 10px !important;
 	}
 	
 	.closeProject {
