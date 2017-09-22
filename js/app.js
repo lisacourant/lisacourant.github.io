@@ -250,6 +250,8 @@ var fromHomeToRight = function() {
 	$(".footer").addClass("animated fadeOutLeft");
 	
 	$(".hiddenArrow").css("display", "block");
+	
+	$('#homeNav').animate({opacity:0});
 
 	setTimeout(function() {
 		$("#aboutPage").css("display", "block");
@@ -274,15 +276,14 @@ var fromHomeToRight = function() {
 		$("#whoAmI").addClass("animated fadeInRight");
 		$(".footerAbout").addClass("animated fadeInRight");
 		$(".timeline").addClass("animated fadeInRight");
+			
+		$('#aboutNav').animate({opacity:1});
 		
 		setTimeout(function() {
 			$("#homePage").css("display", "none");
 			$(".hiddenArrow").css("display", "none");
 		}, 1300);
-	}, 800);
-	
-	$('#aboutNav').css("visibility", "visible");
-	$('#homeNav').css("visibility", "hidden");
+	}, 800);	
 }
 
 var fromHomeToLeft = function() {
@@ -299,6 +300,7 @@ var fromHomeToLeft = function() {
 	
 	$(".hiddenArrow").css("display", "block");
 	
+	$('#homeNav').animate({opacity:0});
 	setTimeout(function() {
 		$("#projectPage").css("display", "block");
 		
@@ -313,11 +315,10 @@ var fromHomeToLeft = function() {
 		setTimeout(function() {
 			$("#homePage").css("display", "none");
 			$(".hiddenArrow").css("display", "none");
+			$('#projNav').animate({opacity:1});
 		}, 1300);
 		
 	}, 800);
-	$('#projNav').css("visibility", "visible");
-	$('#homeNav').css("visibility", "hidden");
 }
 
 var fromAboutToHome = function() {
@@ -344,6 +345,8 @@ var fromAboutToHome = function() {
 	
 	$(".hiddenArrow").css("display", "block");
 	
+	$('#aboutNav').animate({opacity:0});
+	
 	setTimeout(function() {
 		$("#homePage").css("display", "block");
 		
@@ -358,14 +361,13 @@ var fromAboutToHome = function() {
 		$("#imgAccueil").addClass("animated fadeInLeft");
 		$(".footer").addClass("animated fadeInLeft");
 		
+		$('#homeNav').animate({opacity:1});
+		
 		setTimeout(function() {
 			$("#aboutPage").css("display", "none");
 			$(".hiddenArrow").css("display", "none");
 		}, 1300);
 	}, 800);
-	
-	$('#homeNav').css("visibility", 'visible');
-	$('#aboutNav').css("visibility", 'hidden');
 }
 
 var fromAboutToProjects = function() {
@@ -392,6 +394,8 @@ var fromAboutToProjects = function() {
 	
 	$(".hiddenArrow").css("display", "block");
 	
+	$('#aboutNav').animate({opacity: 0});
+	
 	setTimeout(function() {
 		$("#projectPage").css("display", "block");
 		
@@ -403,14 +407,13 @@ var fromAboutToProjects = function() {
 		
 		$("html").css("overflow-y", "auto");
 		
+		
 		setTimeout(function() {
 			$("#aboutPage").css("display", "none");
 			$(".hiddenArrow").css("display", "none");
+			$('#projNav').animate({opacity: 1});
 		}, 1300);
 	}, 800);
-	
-	$('#projNav').css("visibility", 'visible');
-	$('#aboutNav').css("visibility", 'hidden');
 }
 
 var fromProjToAbout = function() {
@@ -423,6 +426,8 @@ var fromProjToAbout = function() {
 	$("html").css("overflow-y", "hidden");
 	
 	$(".hiddenArrow").css("display", "block");
+	
+	$('#projNav').animate({opacity:0});
 	
 	setTimeout(function() {
 		$("#aboutPage").css("display", "block");
@@ -451,11 +456,9 @@ var fromProjToAbout = function() {
 		setTimeout(function() {
 			$("#projectPage").css("display", "none");
 			$(".hiddenArrow").css("display", "none");
+			$('#aboutNav').animate({opacity:1});
 		}, 1300);
 	}, 800);
-	
-	$('#aboutNav').css("visibility", 'visible');
-	$('#projNav').css("visibility", 'hidden');
 }
 
 var fromProjToHome = function() {
@@ -467,6 +470,8 @@ var fromProjToHome = function() {
 	$("html").css("overflow-y", "hidden");
 	
 	$(".hiddenArrow").css("display", "block");
+	
+	$('#projNav').animate({opacity:0});
 	
 	setTimeout(function() {
 		$("#homePage").css("display", "block");
@@ -485,11 +490,9 @@ var fromProjToHome = function() {
 		setTimeout(function() {
 			$("#projectPage").css("display", "none");
 			$(".hiddenArrow").css("display", "none");
+			$('#homeNav').animate({opacity:1});
 		}, 1300);
-	}, 800);
-	
-	$('#homeNav').css("visibility", 'visible');
-	$('#projNav').css("visibility", 'hidden');
+	}, 800);	
 }
 
 var openProjectDetail = function(number) {
