@@ -412,7 +412,7 @@ a, a:hover {
 }
 
 #desktopNav {
-	position: absolute;
+	position: fixed;
 	right: -300px;
 	top: 0;
 	width: 300px;
