@@ -1,5 +1,5 @@
 body {
-	background: #111;
+	background: #000;
 	height: 100%;
 	width: 100%;
 	overflow-x: hidden;
@@ -7,7 +7,7 @@ body {
 }
 
 html {
-	background: #111;
+	background: #000;
 	height: 100%;
 	width: 100%;
 	overflow: hidden;
@@ -30,7 +30,7 @@ a, a:hover {
 
 .scrollCustomHtml::-webkit-scrollbar
 {
-	width: 6px;
+	width: 8px;
 	background-color: #F5F5F5;
 }
 
@@ -48,7 +48,7 @@ a, a:hover {
 
 .scrollCustom::-webkit-scrollbar
 {
-	width: 6px;
+	width: 8px;
 	background-color: #F5F5F5;
 }
 
@@ -66,7 +66,7 @@ a, a:hover {
 
 .scrollCustomTimeline::-webkit-scrollbar
 {
-	height: 6px;
+	height: 8px;
 	background-color: #ccc;
 }
 
@@ -479,9 +479,15 @@ a, a:hover {
   padding-left: 15px;
  }
  
- @media(max-width:800px) {
+ @media(min-width:960px) {
+	.twelve.columns.valign {
+		width: 96% !important;
+	}
+}
+ 
+ @media(max-width:960px) {
 	.valign{
-		padding-left: 0px;
+		padding-left: 0px !important;
 	}
  }
 
@@ -504,7 +510,9 @@ a, a:hover {
 	height:100%;
 	width:50%;
 	animation-duration: 1.2s;
-	background: url('../images/fond.png') no-repeat left top;
+	background: url('../images/fond4.jpg') no-repeat left top;
+	background-position: left;
+	background-size: cover;
 }
 
 #titleDiv {
@@ -587,8 +595,7 @@ a, a:hover {
 	
 	#imgAccueil {
 		width: 100%;
-		background-size: cover;
-		background-position: center;
+		background-size: cover; 
 	}
 	
 	.footer .columns {
@@ -1055,7 +1062,7 @@ a, a:hover {
 	
 	.containerPortfolioMobile .projSnip figcaption {
 		padding: 25px;
-		background-color: #111;
+		background-color: #000;
 		color: #ccc;
 	}
 	
@@ -1174,10 +1181,19 @@ a, a:hover {
 	margin-top: 15px !important;
 }
 
-.projectDetail p {
+.projectDetail p, .projectDetail li {
 	text-align: justify;
 	font-size: 22px;
-	font-family: "Calibri Light", sans-serif;
+	font-family: "Calibri Light", Calibri, sans-serif;
+	font-weight: 100;
+}
+
+.projectDetail h3 {
+	font-size: 24px;
+	text-align: center;
+	font-family: "Calibri Light", Calibri, sans-serif;
+	font-weight: 100;
+	color: #b9700c;
 }
 
 .projectDetail img {
@@ -1228,7 +1244,7 @@ a, a:hover {
 		font-size: 24px !important;
 	}
 	
-	.projectDetail p {
+	.projectDetail p, .projectDetail li {
 		font-size: 18px !important;
 	}
 	

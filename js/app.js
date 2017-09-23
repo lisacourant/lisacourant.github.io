@@ -1,6 +1,7 @@
 var mobile = ($(window).width() > 1053) ? false : true;
 var svgFriendly = ($(window).width() > 720) ? true : false;
 var isIE = /*@cc_on!@*/false || !!document.documentMode;
+var isDev = true;
 
 window.onclick = function(event) {
 	var modalsHTML = document.getElementsByClassName('projectDetail');
@@ -22,14 +23,15 @@ $( document ).ready(function() {
 	$(".navIcon").toggleClass("change");
 	
 	if(!isIE && svgFriendly) {
+		console.log("ok");
 		setTimeout(function() {
 			$(".black").animate({opacity:0});
+			$("#titleDiv").animate({opacity:1});
+			$("#titleDesc").animate({opacity:1});
 		}, 2000);
 		
 		setTimeout(function() {
 			$(".black").css("display", "none");
-			$("#titleDiv").animate({opacity:1});
-			$("#titleDesc").animate({opacity:1});
 		}, 4000); /* because transition time of .black == 2s*/
 		
 		setTimeout(function() {
