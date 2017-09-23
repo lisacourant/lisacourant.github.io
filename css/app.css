@@ -550,6 +550,14 @@ a, a:hover {
 	font-size: 1.5em;
 }
 
+.footer .container a {
+	text-decoration: none;
+}
+
+.footer .container .fa {
+	color: #b9700c;
+}
+
 .footer .container i  {
 	padding-left: 10px;
 	padding-right: 10px;
@@ -788,6 +796,14 @@ a, a:hover {
 
 .footerAbout .columns {
 	text-align: center;
+}
+
+.footerAbout  a {
+	text-decoration: none;
+}
+
+.footerAbout .fa {
+	color: #b9700c;
 }
 
 .footerAbout {
