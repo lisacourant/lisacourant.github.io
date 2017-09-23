@@ -2,7 +2,7 @@ body {
 	background: #111;
 	height: 100%;
 	width: 100%;
-	overflow: hidden;
+	overflow-x: hidden;
 	overflow-y: auto;
 }
 
@@ -392,6 +392,7 @@ a, a:hover {
     background-color: #fff;
     margin: 6px 0;
     transition: 0.4s;
+	box-shadow: 0 0 3px 0 #555
 }
 
 /* Rotate first bar */
@@ -476,12 +477,23 @@ a, a:hover {
   margin-left: 0 !important;
   padding-left: 15px;
  }
+ 
+ @media(max-width:800px) {
+	.valign{
+		padding-left: 0px;
+	}
+ }
 
 
 /** _________________________ HOME _________________________ **/
 #homePage {
 	display: block;
 	animation-duration: 2.5s;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	overflow-y:auto;
+	overflow-x:hidden;
 }
 
 #imgAccueil {
@@ -684,6 +696,11 @@ a, a:hover {
 #aboutPage {
 	display: none;
 	padding-bottom: 15px !important;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	overflow-y:auto;
+	overflow-x:hidden;
 }
 
 #aboutPage * {
@@ -764,7 +781,7 @@ a, a:hover {
 	margin: 0;
 }
 
-.blockAbout .four {
+.#aboutPage .four {
 	padding-top: 40px !important;
 }
 
@@ -792,6 +809,37 @@ a, a:hover {
 	}
 }
 
+@media(max-width: 960px) {
+	.descAbout {
+		width: 100% !important;
+	}
+	#avatarSmall {
+		display: block;
+	}
+	
+	#avatar{
+		display:none;
+	}
+	
+	#aboutPage .descTitle {
+		text-align: center;
+	}
+	
+	#aboutPage .description {
+		text-align: justify;
+	}
+	
+	.footerAbout {
+		width:100% !important;
+	}
+	
+	.footerAbout .columns {
+		text-align: center;
+		width: 100% !important;
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+	}
+}
 
 @media(max-width: 800px) {		
 	#whoAmI {
@@ -807,37 +855,17 @@ a, a:hover {
 	}
 }
 
-@media(max-width: 960px) {
-	.descAbout {
-		width: 100% !important;
-	}
-	#avatarSmall {
-		display: block;
-	}
-	
-	#avatar{
-		display:none;
-	}
-	
-	.footerAbout {
-		width:100% !important;
-	}
-	
-	.footerAbout .columns {
-		text-align: center;
-		width: 100% !important;
-		margin-left: 0 !important;
-		margin-right: 0 !important;
-	}
-}
-
 
 /** _________________________ PROJECTS _________________________ **/
 
 #projectPage {
-	display: none;
-	position: absolute;
+	position: fixed;
 	top: 0;
+	display: none;
+	padding-bottom: 15px !important;
+	width: 100%;
+	overflow-y:auto;
+	overflow-x:hidden;
 }
 
 #projectPage h1 {
@@ -994,12 +1022,13 @@ a, a:hover {
 	}
 	
 	.containerPortfolioMobile{
-		width: 60% !important;
+		width: 80% !important;
 	}
 	
 	.containerPortfolioMobile .projSnip{
+		position: relative;
 		width: 100% !important;
-		box-shadow: 1px 1px 8px 0px #444;
+		box-shadow: 0 2px 3px rgba(255,255,255,.1), 0 0 0 2px rgba(255,255,255,.1);
 		opacity: 0;
 	}
 	
@@ -1030,8 +1059,8 @@ a, a:hover {
 		position: absolute;
 		top: 0;
 		left: 0;
-		width: 100%;
-		height: 100%;
+		right: 0;
+		bottom: 0;
 	}
 }
 
@@ -1115,6 +1144,7 @@ a, a:hover {
 	display: none;
 	opacity: 0;
 	overflow-y: auto;
+	overflow-x: hidden;
 	z-index: 1001;
 }
 
@@ -1129,7 +1159,9 @@ a, a:hover {
 }
 
 .projectDetail p {
-	font-size: 1.5em;
+	text-align: justify;
+	font-size: 22px;
+	font-family: "Calibri Light", sans-serif;
 }
 
 .projectDetail img {
@@ -1154,9 +1186,11 @@ a, a:hover {
 	padding-bottom: 30px !important;
 }
 
-.projectDetail .container {
-	margin: 0 !important;
-	width: 100% !important;
+@media(min-width: 1200px) {
+	.projectDetail .container {
+		margin: 0 !important;
+		width: 100% !important;
+	}
 }
 
 @media(max-width: 1200px) {

@@ -310,12 +310,11 @@ var fromHomeToLeft = function() {
 		$("#portfolio").addClass("animated fadeInLeft");
 		projectsAppearFromLeft();
 		
-		$("html").css("overflow-y", "auto");
+		$('#projNav').animate({opacity:1});
 		
 		setTimeout(function() {
 			$("#homePage").css("display", "none");
 			$(".hiddenArrow").css("display", "none");
-			$('#projNav').animate({opacity:1});
 		}, 1300);
 		
 	}, 800);
@@ -405,25 +404,22 @@ var fromAboutToProjects = function() {
 		$("#portfolio").addClass("animated fadeInRight");
 		projectsAppearFromRight();
 		
-		$("html").css("overflow-y", "auto");
-		
+		$('#projNav').animate({opacity: 1});
 		
 		setTimeout(function() {
 			$("#aboutPage").css("display", "none");
 			$(".hiddenArrow").css("display", "none");
-			$('#projNav').animate({opacity: 1});
 		}, 1300);
 	}, 800);
 }
 
 var fromProjToAbout = function() {
-	console.log("calling fromProjToAbout");
 	/* ERASING PROJ */
 	$("#portfolio").removeClass("animated fadeInLeft fadeInRight");
 	$("#portfolio").addClass("animated fadeOutRight");
 	projectsDisappearToRight();
 	
-	$("html").css("overflow-y", "hidden");
+	
 	
 	$(".hiddenArrow").css("display", "block");
 	
@@ -453,10 +449,11 @@ var fromProjToAbout = function() {
 		$(".footerAbout").addClass("animated fadeInLeft");
 		$(".timeline").addClass("animated fadeInLeft");
 		
+		$('#aboutNav').animate({opacity:1});
+		
 		setTimeout(function() {
 			$("#projectPage").css("display", "none");
 			$(".hiddenArrow").css("display", "none");
-			$('#aboutNav').animate({opacity:1});
 		}, 1300);
 	}, 800);
 }
@@ -467,7 +464,7 @@ var fromProjToHome = function() {
 	$("#portfolio").addClass("animated fadeOutLeft");
 	projectsDisappearToLeft();
 	
-	$("html").css("overflow-y", "hidden");
+	
 	
 	$(".hiddenArrow").css("display", "block");
 	
@@ -487,10 +484,11 @@ var fromProjToHome = function() {
 		$("#imgAccueil").addClass("animated fadeInRight");
 		$(".footer").addClass("animated fadeInRight");
 		
+		$('#homeNav').animate({opacity:1});
+		
 		setTimeout(function() {
 			$("#projectPage").css("display", "none");
 			$(".hiddenArrow").css("display", "none");
-			$('#homeNav').animate({opacity:1});
 		}, 1300);
 	}, 800);	
 }
@@ -506,7 +504,7 @@ var openProjectDetail = function(number) {
 	$(".blurProjects").addClass("animated fadeIn");
 	$("#proj"+number).addClass("animated fadeInUp");
 	
-	$("html").css("overflow-y", "hidden");
+	$("#projectPage").css("overflow-y", "hidden");
 }
 
 var closeProjectDetail = function(number) {
@@ -517,7 +515,7 @@ var closeProjectDetail = function(number) {
 	$(".blurProjects").addClass("animated fadeOut");
 	$("#proj"+number).addClass("animated fadeOutDown");
 	
-	$("html").css("overflow-y", "auto");
+	$("#projectPage").css("overflow-y", "auto");
 	
 	setTimeout(function() {
 		$(".blurProjects").css("display", "none");
