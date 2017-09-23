@@ -914,10 +914,9 @@ a, a:hover {
 		min-width: 300px;
 		max-width: 500px;
 		width: 100%;
-		color: #000000;
+		color: #fff;
 		text-align: left;
 		font-size: 16px;
-		background-color: #fff;
 	}
 
 	.containerPortfolio  .projSnip:nth-child(2) {
@@ -975,7 +974,7 @@ a, a:hover {
 	.containerPortfolio .projSnip p {
 	  font-weight: normal;
 	  font-style: italic;
-	  color: #888;
+	  color: #aaa;
 	  font-size: 0.9em;
 	  padding-left: 15px;
 	  -webkit-transform: translateX(-25px);
