@@ -125,6 +125,7 @@ a, a:hover {
 	margin-top: 50px !important;
 	white-space: nowrap;
 	overflow-x: auto;
+	overflow-y: hidden;
 	opacity: 0;
 }
 
