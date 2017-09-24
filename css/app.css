@@ -465,6 +465,42 @@ a, a:hover {
 	height: 100%;
 }
 
+@media(min-height:400px) and (max-height:500px) {
+	#desktopNav {
+		padding: 40px;
+		padding-top: 30px;
+	}
+
+	#desktopNav a {
+		font-size: 35px;
+	}
+	
+	.navIcon {
+		top: 0px;
+		left: -100px;
+	}
+}
+
+@media (max-height:400px) {
+	#desktopNav {
+		padding: 30px;
+		padding-top: 0px;
+	}
+
+	#desktopNav a {
+		font-size: 30px;
+	}
+	
+	.navIcon {
+		top: 30px;
+		left: -90px;
+	}
+	
+	#desktopNav .bottom img {
+		width: 50px;
+	}
+}
+
 
 /** _________________________ MISC _________________________ **/
 .coloredLetter {
@@ -511,7 +547,6 @@ a, a:hover {
 	width:50%;
 	animation-duration: 1.2s;
 	background: url('../images/fond4.jpg') no-repeat left top;
-	background-position: left;
 	background-size: cover;
 }
 
@@ -577,6 +612,12 @@ a, a:hover {
 	}
 }
 
+@media(max-height: 400px) {
+	#titleDesc {
+		top: 45%;
+	}
+}
+
 @media(max-width:1400px) {
 	.footer {
 		width: 100%;
@@ -595,7 +636,6 @@ a, a:hover {
 	
 	#imgAccueil {
 		width: 100%;
-		background-size: cover; 
 	}
 	
 	.footer .columns {
