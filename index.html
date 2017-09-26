@@ -18,6 +18,7 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js" type="text/javascript"></script>
 		<script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
 		<script src="js/typed.min.js" type="text/javascript"></script>
+		<script src="js/jquery.scrollTo.js" type="text/javascript"></script>
         
 		<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
@@ -159,8 +160,8 @@
 							 stroke-linejoin="round" 
 							 stroke-linecap="round" 
 							 stroke-miterlimit="10" 
-							 stroke-dasharray="2000" 
-							 stroke-dashoffset="2000" 
+							 stroke-dasharray="1900" 
+							 stroke-dashoffset="1900" 
 							 fill="none"
 							 d="m 310.32012,489.02876 c -16.82469,-2.35071 -35.94331,-9.81259 -48.56176,-18.95334 -5.2816,-3.82597 -19.56324,-17.0571 -19.56324,-18.12422 0,-0.34094 -1.34097,-2.41049 -2.97995,-4.59899 -5.6438,-7.53611 -10.81759,-19.22381 -13.91506,-31.43443 -2.97379,-11.72304 -3.10499,-13.8635 -3.10499,-50.65808 l 0,-38.41785 8.4375,-6.35167 c 4.64062,-3.49342 11.48602,-9.19576 15.21201,-12.67187 3.72599,-3.47611 7.47906,-6.3202 8.34019,-6.3202 0.86111,0 6.33501,3.59714 12.16422,7.99362 5.8292,4.3965 11.46234,8.47703 12.51807,9.06785 1.6528,0.92495 1.97395,6.80515 2.31126,42.31887 l 0.39175,41.24466 3.32551,7.09394 c 4.88389,10.41823 12.27868,17.75661 23.31446,23.1366 8.37738,4.08398 10.52958,4.60498 19.02292,4.60498 8.41259,0 10.70197,-0.5415 18.83197,-4.45428 10.80193,-5.19872 17.77174,-11.58483 23.00514,-21.07852 l 3.75,-6.80272 0.38196,-37.35764 0.38196,-37.35765 -3.84775,0.76955 c -27.35288,5.47058 -52.73683,2.96794 -74.82791,-7.37737 -10.07765,-4.71942 -16.30937,-9.09054 -25.52576,-17.9046 -6.42747,-6.1469 -7.43579,-9.87729 -3.75,-13.87365 1.20312,-1.3045 6.6875,-8.28468 12.1875,-15.51152 7.11045,-9.34291 10.77577,-13.15738 12.68475,-13.20091 1.4766,-0.0336 6.35357,2.16769 10.83771,4.89189 23.9894,14.57406 53.88868,14.64539 67.6489,0.16137 4.65115,-4.8958 7.24202,-4.89501 25.70364,0.007 7.90625,2.09963 17.89062,4.72637 22.1875,5.83718 6.92044,1.78905 7.8125,2.37099 7.8125,5.09656 0,3.36279 -6.14852,17.17499 -9.66893,21.72053 -5.50876,7.11291 -16.92578,17.39666 -23.32036,21.00552 -7.97992,4.5036 -9.0185,5.6793 -2.67586,3.02918 2.38417,-0.99617 5.42226,-1.81122 6.75132,-1.81122 2.29893,0 10.01444,8.14753 18.19425,19.21297 4.39965,5.95172 11.4313,23.56062 13.17504,32.99338 1.68624,9.12173 1.65459,27.88679 -0.0627,37.1765 -5.30709,28.70867 -26.98916,55.40542 -55.2603,68.04099 -17.32089,7.74145 -43.01232,11.44091 -61.50746,8.85681 z M 155.84472,332.18992 c -31.72977,-4.55459 -53.87073,-17.49809 -67.893249,-39.69009 -8.15874,-12.91198 -10.91912,-22.24403 -11.65235,-39.39316 -0.55949,-13.08555 -0.26613,-16.69922 2.05355,-25.29607 4.17487,-15.47229 8.57155,-24.04965 17.56567,-34.2684 8.414669,-9.5604 28.911989,-20.59533 43.068849,-23.18652 10.48095,-1.91836 36.30575,-1.68478 47.16047,0.42656 17.36397,3.37746 33.93824,11.86664 47.60996,24.38537 5.32925,4.87982 7.17961,7.43765 7.15699,9.89342 -0.021,2.28249 -3.75532,7.97494 -12.01286,18.31208 -13.40862,16.78542 -15.26278,17.8173 -22.75429,12.66305 -26.09398,-17.95295 -61.41114,-16.97659 -73.57658,2.03406 -8.05436,12.58638 -1.32943,31.50004 13.37424,37.61464 17.00565,7.07189 41.39887,0.53112 57.57011,-15.43675 8.06693,-7.96549 16.17989,-17.94273 16.17989,-19.89788 0,-0.74366 0.48452,-1.35212 1.07672,-1.35212 0.5922,0 4.22924,-4.11588 8.08231,-9.1464 3.85307,-5.03052 8.29042,-10.5662 9.86077,-12.30151 14.00003,-15.47061 13.97765,-15.43408 11.3644,-18.54859 -2.67504,-3.18815 -15.04023,-12.95767 -22.6469,-17.89294 l -5.38771,-3.49557 0.46268,-42.11999 c 0.39125,-35.616646 0.80808,-43.374507 2.69962,-50.245002 9.45872,-34.356027 38.16158,-61.328919 73.94535,-69.488516 12.76063,-2.909745 39.82017,-2.984234 52.43346,-0.144338 12.33449,2.777122 28.31526,9.910034 36.99959,16.514513 4.0632,3.090087 7.63085,5.618341 7.92812,5.618341 0.72555,0 8.59515,8.45378 12.21803,13.125 9.82953,12.673905 16.24284,26.983919 18.5764,41.44955 0.86176,5.342063 1.21921,15.097282 0.85199,23.251852 -0.73055,16.22249 -3.83219,26.75761 -12.161,41.30643 -5.41774,9.46372 -17.49407,23.37121 -20.28545,23.36138 -0.90387,-0.004 -5.01838,-1.39608 -9.14338,-3.09533 -4.125,-1.69924 -8.73521,-3.10289 -10.24492,-3.1192 l -2.74493,-0.0297 -0.38008,-37.8125 -0.38007,-37.812502 -4.16368,-7.675562 c -4.91607,-9.062603 -8.31752,-12.519394 -18.09523,-18.389626 -24.39495,-14.645967 -56.67398,-3.023412 -67.18278,24.190188 -1.30945,3.390959 -1.85611,19.697942 -2.43046,72.500002 l -0.74101,68.125 -4.62605,12.99365 c -5.53331,15.54196 -10.76646,26.85482 -16.78679,36.28914 -5.38982,8.44629 -15.57604,21.17331 -17.02464,21.27121 -0.57785,0.039 -3.95285,2.53639 -7.5,5.54962 -8.55556,7.26782 -24.91313,15.4378 -35.445,17.70345 -12.6172,2.71424 -29.41657,3.20664 -42.97976,1.25974 z m 258.2254,-63.79341 c -2.75,-0.95274 -9.78125,-2.93599 -15.625,-4.40723 -5.84375,-1.47122 -13.29688,-3.54211 -16.5625,-4.60195 -5.45809,-1.7714 -5.9375,-2.25257 -5.9375,-5.95943 0,-6.70582 -3.17799,-15.11781 -7.50981,-19.87818 -11.23074,-12.34173 -30.50427,-13.73797 -50.52214,-3.65998 -12.25179,6.16815 -19.92855,13.1334 -31.84251,28.89118 -1.94169,2.56815 -4.08379,3.96719 -6.07425,3.96719 -2.75945,0 -3.01292,-0.41665 -2.4714,-4.0625 0.33187,-2.23437 1.82091,-7.34329 3.30898,-11.35314 3.7847,-10.19851 5.02788,-21.75991 5.07253,-47.17403 l 0.0386,-21.96469 5.9375,-2.67329 c 10.2412,-4.61099 21.17469,-6.48421 37.96126,-6.50388 14.98522,-0.0175 36.3133,2.6323 39.15698,4.86495 0.7256,0.56968 4.13176,1.95983 7.56926,3.08922 8.0048,2.62997 21.11795,10.98411 29.2584,18.63995 3.50163,3.29317 6.3666,6.33383 6.3666,6.75701 0,0.42319 1.40826,2.61576 3.12949,4.87239 4.73136,6.20313 10.23971,18.98818 11.76206,27.30008 1.45451,7.94155 1.85487,30.4598 0.59971,33.73069 -0.94082,2.45175 -6.74751,2.50533 -13.61626,0.12564 z"
 							 id="path6978"
@@ -192,63 +193,69 @@
 					
 					
 					
-					<div class="page scrollCustomHtml" id="aboutPage">
-						<h1 id="whoAmI">Who am I?</h1>
-						<div class="container">
-							<div class="row">
-								<div class="twelve columns">
-									<img class="roundedImage" id="avatarSmall" src="images/avatar.jpg"/>
+					<div class="page" id="aboutPage">
+						<div id="about_block_1" class="scrollCustomHtml">
+							<h1 id="whoAmI">Who am I?</h1>
+							<div class="container">
+								<div class="row">
+									<div class="twelve columns">
+										<img class="roundedImage" id="avatarSmall" src="images/avatar.jpg"/>
+									</div>
 								</div>
-							</div>
-							<div class="row">
-								<div class="eight columns descAbout">
-									<p class="descTitle">- Lisa Courant, computer science engineer</p>
-									<p class="description">
-										Freshly graduated from <a href="https://www.insa-lyon.fr/en/" target="_blank">INSA Lyon</a>, a french software engineering school, I am now turning towards web development and web design.
-										A lifelong passion for graphic design and logical problems resolution continues to inspire me day after day as I try to create nice and user-friendly websites and web applications.
+								<div class="row">
+									<div class="eight columns descAbout">
+										<p class="descTitle">- Lisa Courant, computer science engineer</p>
+										<p class="description">
+											Freshly graduated from <a href="https://www.insa-lyon.fr/en/" target="_blank">INSA Lyon</a>, a french software engineering school, I am now turning towards web development and web design.
+											A lifelong passion for graphic design and logical problems resolution continues to inspire me day after day as I try to create nice and user-friendly websites and web applications.
+										</p>
+									</div>
+									<div class="four columns">
+										<img class="roundedImage" id="avatar" src="images/avatar.jpg"/>
+									</div>
+								</div>
+								
+								<div class="row">
+									<div id="firstCol" class="six columns">
+										<h2>Core competences</h2>
+										<div>
+											<h4>Front-end</h4>
+											<p>CSS3, HTML5, JavaScript, jQuery</p>
+											<h4>Back-end</h4>
+											<p>Django, NodeJS</p>
+											<h4>Programming languages</h4>
+											<p>Java, Python, C++</p>
+										</div>
+									</div>
+									<div id="secCol" class="six columns">
+										<h2>During my free time...</h2>
+										<div>
+											<p>Dance</p>
+											<p>Graphic design</p>
+											<p>Video games</p>
+											<p>Drawing & painting</p>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<p class="switchAbout" id="switchGoBot">
+										<span onclick="scrollTo()"><i class="fa fa-chevron-down"></i> Want to know more about my background? Click here!</span>
 									</p>
 								</div>
-								<div class="four columns">
-									<img class="roundedImage" id="avatar" src="images/avatar.jpg"/>
-								</div>
 							</div>
+						</div>
 							
+						<div id="about_block_2">
 							<div class="row">
-								<div id="firstCol" class="six columns">
-									<h2>Core competences</h2>
-									<div>
-										<h4>Front-end</h4>
-										<p>CSS3, HTML5, JavaScript, jQuery</p>
-										<h4>Back-end</h4>
-										<p>Django, NodeJS</p>
-										<h4>Programming languages</h4>
-										<p>Java, Python, C++</p>
-									</div>
-								</div>
-								<div id="secCol" class="six columns">
-									<h2>During my free time...</h2>
-									<div>
-										<p>Dance</p>
-										<p>Graphic design</p>
-										<p>Video games</p>
-										<p>Drawing & painting</p>
-									</div>
-								</div>
+								<p class="switchAbout" id="switchBackTop">
+									<span onclick="scrollToTop()"><i class="fa fa-chevron-up"></i> Back to my bio.</span>
+								</p>
 							</div>
 							
-							<section class="timeline scrollCustomTimeline">
+							<section class="timeline scrollCustomTimeline" id="timeline_id">
 							  <ol>
 								<li class="education">
 								  <div>
-									<time>2012</time>
-									<title>French Baccalaureat with highest honours</title>
-									<p>June 2012</p>
-									Pierre Beghin High School (France), mathematics specialization.
-								  </div>
-								</li>
-								<li class="education">
-								  <div>
-									<time>2014</time>
 									<title>Preparatory Classes - INSA Lyon (France)</title>
 									<p>Sept. 2012 - June 2014</p>
 									When physics, mathematics and computer science where my daily routine.
@@ -256,7 +263,6 @@
 								</li>
 								<li class="education">
 								  <div>
-									<time>2017</time>
 									<title>Software Engineering - INSA Lyon (France)</title>
 									<p>Sept. 2014 - September 2017</p>
 									One of the best french engineering school.
@@ -264,7 +270,6 @@
 								</li>
 								<li class="work">
 								  <div>
-									<time>2016</time>
 									<title>Mobile and web development internship - LIRIS (CNRS)</title>
 									<p>March 2016 - Aug. 2016</p>
 									Mobile (android) development, web development, design, UX/UI research. Worked mainly with Android Studio.
@@ -272,7 +277,6 @@
 								</li>
 								<li class="education">
 								  <div>
-									<time>2017</time>
 									<title>Software Engineering - Warsaw University of Technology (Poland)</title>
 									<p>Sept. 2016 - Feb. 2017</p>
 									Six months in the most prestigious engineering university of Poland.
@@ -280,7 +284,6 @@
 								</li>
 								<li class="work">
 								  <div>
-									<time>2017</time>
 									<title>Web development internship - SOLUTEC</title>
 									<p>March 2017 - Sept. 2017</p>
 									Web development, web design, UX/UI research. Worked mainly with django and nodeJS.
@@ -289,13 +292,13 @@
 								<li></li>
 							  </ol>
 							</section>
-						</div>
-							
-						<div class="container footerAbout">
-							<div class="row">
-								<div class="four columns"><span><i class="fa fa-skype" aria-hidden="true"> </i> live:lisa.courant</span></div>
-								<div class="four columns"> <span><i class="fa fa-envelope" aria-hidden="true"> </i> lisa.courant@gmail.com</span></div>
-								<div class="four columns"><span><i class="fa fa-linkedin-square" aria-hidden="true"> </i> <a href="https://www.linkedin.com/in/lisacourant/" target="_blank">linkedin.com/in/lisacourant</a></span></div>
+								
+							<div class="container footerAbout">
+								<div class="row">
+									<div class="four columns"><span><i class="fa fa-skype" aria-hidden="true"> </i> live:lisa.courant</span></div>
+									<div class="four columns"> <span><i class="fa fa-envelope" aria-hidden="true"> </i> lisa.courant@gmail.com</span></div>
+									<div class="four columns"><span><i class="fa fa-linkedin-square" aria-hidden="true"> </i> <a href="https://www.linkedin.com/in/lisacourant/" target="_blank">linkedin.com/in/lisacourant</a></span></div>
+								</div>
 							</div>
 						</div>
 					</div>

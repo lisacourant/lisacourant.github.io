@@ -22,7 +22,7 @@ window.onclick = function(event) {
 $( document ).ready(function() {
 	$(".navIcon").toggleClass("change");
 	
-	if(!isIE && svgFriendly) {
+	if(!isIE && svgFriendly && !isDev) {
 		console.log("ok");
 		setTimeout(function() {
 			$(".black").animate({opacity:0});
@@ -50,6 +50,20 @@ $( document ).ready(function() {
 	}
 	
 	
+	// à mettre dans la page about
+	var valueScrolled = $(document).scrollTop();
+	var block1length = $("#about_block_1").css("height");
+	var block2length = $("#about_block_2").css("height");
+	var totalLength = block1length + block2length;
+	var aboutPageLength = $("#aboutPage").css("height");
+	
+	console.log("valueScrolled",valueScrolled);
+	console.log("block1length",block1length);
+	console.log("block2length",block2length);
+	console.log("totalLength",totalLength);
+	console.log("aboutPageLength",aboutPageLength);
+	
+	
 	
     var typed3 = new Typed('#typed', {
 		strings: ['Computer Scientist', 'Software engineer', 'Web developer'],
@@ -61,6 +75,16 @@ $( document ).ready(function() {
 		loop: true
 	  });
 });
+
+var scrollTo = function() {
+	var block1length = $("#about_block_1").css("height");
+	$("#aboutPage").scrollTo(block1length, 500);
+}
+
+var scrollToTop = function() {
+	var block2length = $("#about_block_2").css("height");
+	$("#aboutPage").scrollTo("-"+block2length, 500);
+}
 
 var toggleNav = function() {
     if($(".navIcon").hasClass("change")) {
@@ -268,6 +292,8 @@ var fromHomeToRight = function() {
 		$("#whoAmI").removeClass("animated fadeOutRight fadeOutLeft");
 		$(".footerAbout").removeClass("animated fadeOutRight fadeOutLeft");
 		$(".timeline").removeClass("animated fadeOutRight fadeOutLeft");
+		$("#switchGoBot").removeClass("animated fadeOutRight fadeOutLeft");
+		$("#switchBackTop").removeClass("animated fadeOutRight fadeOutLeft");
 		
 		$(".descTitle").addClass("animated fadeInRight");
 		$(".description").addClass("animated fadeInRight");
@@ -278,6 +304,9 @@ var fromHomeToRight = function() {
 		$("#whoAmI").addClass("animated fadeInRight");
 		$(".footerAbout").addClass("animated fadeInRight");
 		$(".timeline").addClass("animated fadeInRight");
+		$("#switchGoBot").addClass("animated fadeInRight");
+		$("#switchBackTop").addClass("animated fadeInRight");
+		
 			
 		$('#aboutNav').animate({opacity:1});
 		
@@ -333,6 +362,8 @@ var fromAboutToHome = function() {
 	$("#whoAmI").removeClass("animated fadeInRight fadeInLeft");
 	$(".footerAbout").removeClass("animated fadeInRight fadeInLeft");
 	$(".timeline").removeClass("animated fadeInRight fadeInLeft");
+	$("#switchGoBot").removeClass("animated fadeInRight fadeInLeft");
+	$("#switchBackTop").removeClass("animated fadeInRight fadeInLeft");
 	
 	$(".descTitle").addClass("animated fadeOutRight");
 	$(".description").addClass("animated fadeOutRight");
@@ -343,6 +374,8 @@ var fromAboutToHome = function() {
 	$("#whoAmI").addClass("animated fadeOutRight");
 	$(".footerAbout").addClass("animated fadeOutRight");
 	$(".timeline").addClass("animated fadeOutRight");
+	$("#switchGoBot").addClass("animated fadeOutRight");
+	$("#switchBackTop").addClass("animated fadeOutRight");
 	
 	$(".hiddenArrow").css("display", "block");
 	
@@ -382,6 +415,8 @@ var fromAboutToProjects = function() {
 	$("#whoAmI").removeClass("animated fadeInRight fadeInLeft");
 	$(".footerAbout").removeClass("animated fadeInRight fadeInLeft");
 	$(".timeline").removeClass("animated fadeInRight fadeInLeft");
+	$("#switchGoBot").removeClass("animated fadeInRight fadeInLeft");
+	$("#switchBackTop").removeClass("animated fadeInRight fadeInLeft");
 	
 	$(".descTitle").addClass("animated fadeOutLeft");
 	$(".description").addClass("animated fadeOutLeft");
@@ -392,6 +427,8 @@ var fromAboutToProjects = function() {
 	$("#whoAmI").addClass("animated fadeOutLeft");
 	$(".footerAbout").addClass("animated fadeOutLeft");
 	$(".timeline").addClass("animated fadeOutLeft");
+	$("#switchGoBot").addClass("animated fadeOutLeft");
+	$("#switchBackTop").addClass("animated fadeOutLeft");
 	
 	$(".hiddenArrow").css("display", "block");
 	
@@ -421,8 +458,6 @@ var fromProjToAbout = function() {
 	$("#portfolio").addClass("animated fadeOutRight");
 	projectsDisappearToRight();
 	
-	
-	
 	$(".hiddenArrow").css("display", "block");
 	
 	$('#projNav').animate({opacity:0});
@@ -440,6 +475,8 @@ var fromProjToAbout = function() {
 		$("#whoAmI").removeClass("animated fadeOutRight fadeOutLeft");
 		$(".footerAbout").removeClass("animated fadeOutRight fadeOutLeft");
 		$(".timeline").removeClass("animated fadeOutRight fadeOutLeft");
+		$("#switchGoBot").removeClass("animated fadeOutRight fadeOutLeft");
+		$("#switchBackTop").removeClass("animated fadeOutRight fadeOutLeft");
 		
 		$(".descTitle").addClass("animated fadeInLeft");
 		$(".description").addClass("animated fadeInLeft");
@@ -450,6 +487,8 @@ var fromProjToAbout = function() {
 		$("#whoAmI").addClass("animated fadeInLeft");
 		$(".footerAbout").addClass("animated fadeInLeft");
 		$(".timeline").addClass("animated fadeInLeft");
+		$("#switchGoBot").addClass("animated fadeInLeft");
+		$("#switchBackTop").addClass("animated fadeInLeft");
 		
 		$('#aboutNav').animate({opacity:1});
 		

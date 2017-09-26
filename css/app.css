@@ -3,7 +3,7 @@ body {
 	height: 100%;
 	width: 100%;
 	overflow-x: hidden;
-	overflow-y: auto;
+	overflow-y: hidden;
 }
 
 html {
@@ -131,8 +131,9 @@ a, a:hover {
 
 .timeline ol {
   font-size: 0;
-  padding: 280px 0;
+  padding: 315px 0 250px 0;
   transition: all 1s;
+  margin-bottom: 0px;
 }
 
 .timeline ol li {
@@ -181,7 +182,7 @@ a, a:hover {
 }
 
 .timeline ol .education div {
-	background: #555;
+	background: #222;
 }
 
 .timeline ol .work div {
@@ -209,7 +210,7 @@ a, a:hover {
 }
 
 .timeline ol .education:nth-child(odd) div::before {
-  border-color: #555 transparent transparent transparent;
+  border-color: #222 transparent transparent transparent;
 }
 
 .timeline ol .work:nth-child(odd) div::before {
@@ -226,38 +227,25 @@ a, a:hover {
 }
 
 .timeline ol .education:nth-child(even) div::before {
-  border-color: transparent transparent transparent #555;
+  border-color: transparent transparent transparent #222;
 }
 
 .timeline ol .work:nth-child(even) div::before {
   border-color: transparent transparent transparent white;
 }
 
-.timeline time {
-	z-index: 5;
-	opacity: 0.15;
-	display: block;
-	position: absolute;
-	bottom: -20px;
-	right: 20px;
-	font-size: 8rem !important;
-	color: #000;
-	font-weight: bold;
-	margin-bottom: 8px;
-}
-
 .timeline p {
 	font-style: italic;
 	margin-bottom: 1rem !important;
-	color: #aaa !important;
+	color: #999 !important;
 }
 
 .timeline title {
 	z-index: 10;
 	display: block;
-	font-size: 1.2rem;
-	font-weight: bold;
 	margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .timeline .education  *{
@@ -265,7 +253,7 @@ a, a:hover {
 }
 
 .timeline .education  p{
-	color: #888 !important;
+	color: #999 !important;
 }
 
 
@@ -735,12 +723,12 @@ a, a:hover {
     stroke-dashoffset: 0;
   }
   60% {
-    stroke-dashoffset: 2000;
+    stroke-dashoffset: 1900;
   }
 }
 
 .path {
-  animation: draw 9s;
+  animation: draw 7s;
 }
 
 
@@ -749,18 +737,25 @@ a, a:hover {
 
 /** _________________________ ABOUT _________________________ **/
 
+
 #aboutPage {
 	display: none;
-	padding-bottom: 15px !important;
 	position: fixed;
 	top: 0;
 	width: 100%;
-	overflow-y:auto;
+	overflow-y:hidden;
 	overflow-x:hidden;
 }
 
 #aboutPage * {
-	font-size:1.1em;
+	font-size:22px;
+}
+
+#about_block_1, #about_block_2 {
+	position: relative;
+	height: 100%;
+	overflow-x:hidden;
+	overflow-y: auto;
 }
 
 #aboutPage h1 {
@@ -785,6 +780,7 @@ a, a:hover {
 	opacity: 0;
 	text-align: right;
 	animation-duration: 1.5s;
+	padding-bottom: 15px;
 }
 #whoAmI {
 	opacity: 0;
@@ -837,8 +833,30 @@ a, a:hover {
 	margin: 0;
 }
 
+.switchAbout {
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 20px;
+	color: #ccc;
+}
+.switchAbout span:hover {
+	cursor: pointer;
+}
+
+.switchAbout span {
+	color: #aaa;
+	font-size: 25px !important;
+}
+
 .#aboutPage .four {
 	padding-top: 40px !important;
+}
+
+.footerAbout {
+	position: relative;
+	width: 100%;
+	margin-top: 30px;
+	opacity:0;
 }
 
 .footerAbout .columns {
@@ -853,27 +871,38 @@ a, a:hover {
 	color: #b9700c;
 }
 
-.footerAbout {
-	width: 100% !important;
-	margin-top: 50px !important;
-	opacity:0;
-}
-
 @media(max-width: 1200px) {		
 	#whoAmI {
 		font-size: 3em !important;
 	}
 	
 	#aboutPage .descTitle, #aboutPage h2 {
-		font-size: 1.4em !important;
+		font-size: 30px;
 	}
 	
 	#aboutPage p, #aboutPage span, #aboutPage h4 {
-		font-size: 22px !important;
+		font-size: 22px;
+	}
+	.switchAbout span {
+		font-size: 25px !important;
 	}
 }
 
 @media(max-width: 960px) {
+	#aboutPage .six.columns{
+		width: 48%;
+	}
+	
+	#aboutPage .four.columns{
+		width: 30.6666666667%;
+	}
+	
+	#aboutPage .eight.columns{
+		width: 65.3333333333%;
+	}
+}
+
+@media(max-width: 940px) {
 	.descAbout {
 		width: 100% !important;
 	}
@@ -903,19 +932,27 @@ a, a:hover {
 		margin-left: 0 !important;
 		margin-right: 0 !important;
 	}
+	
+	#aboutPage .six.columns, #aboutPage .four.columns, #aboutPage .eight.columns {
+		width: 100%;
+	}
 }
 
 @media(max-width: 800px) {		
 	#whoAmI {
-		font-size: 2.5em !important;
+		font-size: 2.5em;
 	}
 	
 	#aboutPage .descTitle, #aboutPage h2 {
-		font-size: 23px !important;
+		font-size: 23px;
 	}
 	
 	#aboutPage p, #aboutPage span, #aboutPage h4 {
-		font-size: 18px !important;
+		font-size: 18px;
+	}
+	
+	.switchAbout  span {
+		font-size: 22px !important;
 	}
 }
 
