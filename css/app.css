@@ -578,7 +578,7 @@ a, a:hover {
 }
 
 .footer .container span {
-	font-size: 1.5em;
+	font-size: 22px;
 }
 
 .footer .container a {
@@ -762,16 +762,16 @@ a, a:hover {
 	width:100%;
 	text-align:center;
 	font-family: 'Pacifico', sans-serif;
-	font-size: 6em;
+	font-size: 100px;
 	animation-duration: 1.2s;
 	margin-top: 50px;
 }
 
 #aboutPage .descTitle {
-	font-size:2em;
+	font-size:50px;
 	opacity: 0;
 	text-align: right;
-	font-size: 2.3em;
+	font-size: 50px;
 	color: #b9700c;
 	animation-duration: 1.5s;
 }
@@ -819,7 +819,7 @@ a, a:hover {
 }
 
 #aboutPage h2 {
-	font-size: 2.3em;
+	font-size: 50px;
 	color: #b9700c;
 }
 
@@ -872,8 +872,8 @@ a, a:hover {
 }
 
 @media(max-width: 1200px) {		
-	#whoAmI {
-		font-size: 3em !important;
+	#aboutPage h1 {
+		font-size: 60px;
 	}
 	
 	#aboutPage .descTitle, #aboutPage h2 {
@@ -939,8 +939,8 @@ a, a:hover {
 }
 
 @media(max-width: 800px) {		
-	#whoAmI {
-		font-size: 2.5em;
+	#aboutPage h1 {
+		font-size: 40px;
 	}
 	
 	#aboutPage .descTitle, #aboutPage h2 {
@@ -973,9 +973,10 @@ a, a:hover {
 	width:100%;
 	text-align:center;
 	font-family: 'Pacifico', sans-serif;
-	font-size: 6em;
+	font-size: 100px;
 	animation-duration: 1.2s;
-	margin-top: 50px;
+	margin-top: 23px;
+	margin-bottom: 8px;
 }
 
 #portfolio {
@@ -1000,7 +1001,7 @@ a, a:hover {
 		width: 60% !important;
 		height: auto;
 		text-align:center;
-		margin-top: 50px !important;
+		margin-top: 25px !important;
 	}
 
 	.containerPortfolio  .projSnip {
@@ -1075,7 +1076,7 @@ a, a:hover {
 	  font-weight: normal;
 	  font-style: italic;
 	  color: #aaa;
-	  font-size: 0.9em;
+	  font-size: 15px;
 	  padding-left: 15px;
 	  -webkit-transform: translateX(-25px);
 	  transform: translateX(-25px);
@@ -1107,11 +1108,13 @@ a, a:hover {
 
 @media(max-width: 1200px) {
 	.containerPortfolio .projSnip h3 {
-		font-size: 1.1em !important;
+		font-size: 18px !important;
 	}
 	
 	#projectPage h1 {
-		font-size: 3em !important;
+		font-size: 60px !important;
+		margin-bottom: 20px;
+		margin-top: 35px;
 	}
 }
 
@@ -1144,11 +1147,11 @@ a, a:hover {
 	}
 	
 	.containerPortfolioMobile .projSnip p {
-		font-size: 1.2em;
+		font-size: 18px;
 		margin-bottom: 0;
 	}
 	.containerPortfolioMobile .projSnip h3 {
-		font-size: 2em !important;
+		font-size: 30px !important;
 	}
 	
 	.containerPortfolioMobile .projSnip a:hover {
@@ -1166,13 +1169,7 @@ a, a:hover {
 
 @media(max-width: 800px) {	
 	#projectPage h1 {
-		font-size: 2.5em !important;
-	}
-	.containerPortfolioMobile .projSnip p {
-		font-size: 1.2em;
-	}
-	.containerPortfolioMobile .projSnip h3 {
-		font-size: 1.8em !important;
+		font-size: 40px !important;
 	}
 }
 
@@ -1281,7 +1278,7 @@ a, a:hover {
 	width: 100% !important;
 	padding: 25px !important;
 	text-align: center;
-	line-height: 2.9em;
+	line-height: 42px;
 }
 
 .projectDetail .tags .tag  {

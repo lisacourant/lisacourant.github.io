@@ -57,14 +57,6 @@ $( document ).ready(function() {
 	var totalLength = block1length + block2length;
 	var aboutPageLength = $("#aboutPage").css("height");
 	
-	console.log("valueScrolled",valueScrolled);
-	console.log("block1length",block1length);
-	console.log("block2length",block2length);
-	console.log("totalLength",totalLength);
-	console.log("aboutPageLength",aboutPageLength);
-	
-	
-	
     var typed3 = new Typed('#typed', {
 		strings: ['Computer Scientist', 'Software engineer', 'Web developer'],
 		typeSpeed: 30,
@@ -76,17 +68,8 @@ $( document ).ready(function() {
 	  });
 });
 
-var scrollTo = function() {
-	var block1length = $("#about_block_1").css("height");
-	$("#aboutPage").scrollTo(block1length, 500);
-}
-
-var scrollToTop = function() {
-	var block2length = $("#about_block_2").css("height");
-	$("#aboutPage").scrollTo("-"+block2length, 500);
-}
-
 var toggleNav = function() {
+	console.log("oui oui");
     if($(".navIcon").hasClass("change")) {
 		$("#desktopNav").animate({"right":"-250px"});
 		$(".blurPage").animate({opacity:0}, 150, function() {
@@ -98,6 +81,17 @@ var toggleNav = function() {
 		$(".blurPage").animate({opacity:0.5}, 150);
 	}
 	$(".navIcon").toggleClass("change");
+}
+
+var scrollToBottom = function() {
+	console.log("scrolling");
+	var block1length = $("#about_block_1").css("height");
+	$("#aboutPage").scrollTo(block1length, 500);
+}
+
+var scrollBackTop = function() {
+	var block2length = $("#about_block_2").css("height");
+	$("#aboutPage").scrollTo("-"+block2length, 500);
 }
 
 var callGoHome = function() {
