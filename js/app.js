@@ -31,16 +31,17 @@ $( document ).ready(function() {
 		}, 2000);
 		
 		setTimeout(function() {
+			$(".logoHome").animate({opacity:1});
 			$(".black").css("display", "none");
 		}, 4000); /* because transition time of .black == 2s*/
 		
 		setTimeout(function() {
 			$(".bg").css("display", "none");
-			$(".logoHome").css("display", "none");
+			/* $(".logoHome").css("display", "none"); */
 		}, 5300);
 	} else {
-		$(".bg").css("display", "none");
-		$(".logoHome").css("display", "none");
+		/* $(".bg").css("display", "none");
+		$(".logoHome").css("display", "none"); */
 		$("#titleDiv").animate({opacity:1});
 		$("#titleDesc").animate({opacity:1});
 		$(".black").animate({opacity:0});
