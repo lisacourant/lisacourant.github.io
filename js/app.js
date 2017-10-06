@@ -539,8 +539,6 @@ var openProjectDetail = function(number) {
 	
 	$(".blurProjects").addClass("animated fadeIn");
 	$("#proj"+number).addClass("animated fadeInUp");
-	
-	$("#projectPage").css("overflow-y", "hidden");
 }
 
 var closeProjectDetail = function(number) {
@@ -550,8 +548,6 @@ var closeProjectDetail = function(number) {
 	
 	$(".blurProjects").addClass("animated fadeOut");
 	$("#proj"+number).addClass("animated fadeOutDown");
-	
-	$("#projectPage").css("overflow-y", "auto");
 	
 	setTimeout(function() {
 		$(".blurProjects").css("display", "none");
