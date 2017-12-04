@@ -1307,14 +1307,14 @@ a, a:hover {
 .projectDetail p, .projectDetail li {
 	text-align: justify;
 	font-size: 22px;
-	font-family: "Calibri Light", Calibri, sans-serif;
+	/*font-family: "Calibri Light", Calibri, sans-serif;*/
 	font-weight: 100;
 }
 
 .projectDetail h3 {
 	font-size: 24px;
 	text-align: center;
-	font-family: "Calibri Light", Calibri, sans-serif;
+	/*font-family: "Calibri Light", Calibri, sans-serif;*/
 	font-weight: 100;
 	color: #b9700c;
 }
