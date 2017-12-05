@@ -1047,7 +1047,7 @@ a, a:hover {
 		-webkit-flex-wrap: wrap; /* Safari 6.1+ */  
 		flex-wrap: wrap;
 		
-		width: 60% !important;
+		width: 70% !important;
 		height: auto;
 		text-align:center;
 		margin-top: 25px !important;
@@ -1061,7 +1061,7 @@ a, a:hover {
 		display: inline-block;
 		overflow: hidden;
 		margin: 8px;
-		min-width: 300px;
+		min-width: 250px;
 		max-width: 500px;
 		width: 100%;
 		color: #fff;
@@ -1073,9 +1073,9 @@ a, a:hover {
 		flex: 2;
 	}
 
-	.containerPortfolio  .projSnip:nth-child(6) {
+/*	.containerPortfolio  .projSnip:nth-child(6) {
 		flex: 2;
-	}
+	}*/
 
 	.containerPortfolio  .projSnip:hover {
 		cursor: pointer;
