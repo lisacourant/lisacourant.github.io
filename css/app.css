@@ -564,8 +564,9 @@ a, a:hover {
 	animation-delay: 0.3s;
 }
 
-#titleDiv .coloredLetter {
+h1 .coloredLetter {
 	font-family: 'Abril Fatface', sans-serif;
+	font-size: inherit !important;
 }
 
 .footer {
