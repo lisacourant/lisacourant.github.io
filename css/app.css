@@ -545,7 +545,7 @@ a, a:hover {
 	top: 20%;
 	left: 40%;
 	margin: 0;
-	font-family: 'Sriracha', sans-serif;
+	font-family: 'Abril Fatface', sans-serif;
 	font-size: 90px;
 	min-width:50%;
 	animation-duration: 1.2s;
@@ -565,7 +565,7 @@ a, a:hover {
 }
 
 #titleDiv .coloredLetter {
-	font-family: 'Sriracha', sans-serif;
+	font-family: 'Abril Fatface', sans-serif;
 }
 
 .footer {
@@ -789,7 +789,7 @@ a, a:hover {
 #aboutPage h1 {
 	width:100%;
 	text-align:center;
-	font-family: 'Sriracha', sans-serif;
+	font-family: 'Abril Fatface', sans-serif;
 	font-size: 100px;
 	animation-duration: 1.2s;
 	margin-top: 50px;
@@ -1021,7 +1021,7 @@ a, a:hover {
 #projectPage h1 {
 	width:100%;
 	text-align:center;
-	font-family: 'Sriracha', sans-serif;
+	font-family: 'Abril Fatface', sans-serif;
 	font-size: 100px;
 	animation-duration: 1.2s;
 	margin-top: 50px;
@@ -1295,7 +1295,7 @@ a, a:hover {
 }
 
 .projectDetail h1 {
-	font-family: 'Sriracha', sans-serif;
+	font-family: 'Abril Fatface', sans-serif;
 	text-align: center;
 }
 
