@@ -545,7 +545,7 @@ a, a:hover {
 	top: 20%;
 	left: 40%;
 	margin: 0;
-	font-family: 'Sriracha', sans-serif;
+	font-family: 'Abril Fatface', sans-serif;
 	font-size: 90px;
 	min-width:50%;
 	animation-duration: 1.2s;
@@ -564,8 +564,9 @@ a, a:hover {
 	animation-delay: 0.3s;
 }
 
-#titleDiv .coloredLetter {
-	font-family: 'Sriracha', sans-serif;
+h1 .coloredLetter {
+	font-family: 'Abril Fatface', sans-serif;
+	font-size: inherit !important;
 }
 
 .footer {
@@ -789,7 +790,7 @@ a, a:hover {
 #aboutPage h1 {
 	width:100%;
 	text-align:center;
-	font-family: 'Sriracha', sans-serif;
+	font-family: 'Abril Fatface', sans-serif;
 	font-size: 100px;
 	animation-duration: 1.2s;
 	margin-top: 50px;
@@ -1021,11 +1022,11 @@ a, a:hover {
 #projectPage h1 {
 	width:100%;
 	text-align:center;
-	font-family: 'Sriracha', sans-serif;
+	font-family: 'Abril Fatface', sans-serif;
 	font-size: 100px;
 	animation-duration: 1.2s;
-	margin-top: 23px;
-	margin-bottom: 8px;
+	margin-top: 50px;
+	margin-bottom: 25px;
 }
 
 #portfolio {
@@ -1047,7 +1048,7 @@ a, a:hover {
 		-webkit-flex-wrap: wrap; /* Safari 6.1+ */  
 		flex-wrap: wrap;
 		
-		width: 60% !important;
+		width: 65% !important;
 		height: auto;
 		text-align:center;
 		margin-top: 25px !important;
@@ -1061,7 +1062,7 @@ a, a:hover {
 		display: inline-block;
 		overflow: hidden;
 		margin: 8px;
-		min-width: 300px;
+		min-width: 250px;
 		max-width: 500px;
 		width: 100%;
 		color: #fff;
@@ -1073,9 +1074,9 @@ a, a:hover {
 		flex: 2;
 	}
 
-	.containerPortfolio  .projSnip:nth-child(6) {
+/*	.containerPortfolio  .projSnip:nth-child(6) {
 		flex: 2;
-	}
+	}*/
 
 	.containerPortfolio  .projSnip:hover {
 		cursor: pointer;
@@ -1295,7 +1296,7 @@ a, a:hover {
 }
 
 .projectDetail h1 {
-	font-family: 'Sriracha', sans-serif;
+	font-family: 'Abril Fatface', sans-serif;
 	text-align: center;
 }
 
@@ -1307,14 +1308,14 @@ a, a:hover {
 .projectDetail p, .projectDetail li {
 	text-align: justify;
 	font-size: 22px;
-	font-family: "Calibri Light", Calibri, sans-serif;
+	/*font-family: "Calibri Light", Calibri, sans-serif;*/
 	font-weight: 100;
 }
 
 .projectDetail h3 {
 	font-size: 24px;
 	text-align: center;
-	font-family: "Calibri Light", Calibri, sans-serif;
+	/*font-family: "Calibri Light", Calibri, sans-serif;*/
 	font-weight: 100;
 	color: #b9700c;
 }
