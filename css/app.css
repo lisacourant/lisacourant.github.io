@@ -1,5 +1,5 @@
 body {
-	background: #000;
+	background: #0a0a0a;
 	height: 100%;
 	width: 100%;
 	overflow-x: hidden;
@@ -7,7 +7,7 @@ body {
 }
 
 html {
-	background: #000;
+	background: #0a0a0a;
 	height: 100%;
 	width: 100%;
 	overflow: hidden;
@@ -443,7 +443,7 @@ a, a:hover {
 
 .blurPage {
 	z-index: 499;
-	background-color: #000;
+	background-color: #0a0a0a;
 	opacity: 0;
 	display: none;
 	position: absolute;
@@ -534,7 +534,7 @@ a, a:hover {
 	height:100%;
 	width:50%;
 	animation-duration: 1.2s;
-	background: url('../images/fond4.jpg') no-repeat left top;
+	background: url('../images/fond4b.png') no-repeat left top;
 	background-size: cover;
 }
 
@@ -870,10 +870,14 @@ h1 .coloredLetter {
 }
 .switchAbout span:hover {
 	cursor: pointer;
+  color: #b9700c;
+  opacity: 0.7;
 }
 
 .switchAbout span {
-	color: #aaa;
+	color: #fff;
+  opacity: 0.6;
+  transition: all 0.5s ease-in-out;
 	font-size: 25px !important;
 }
 
@@ -1192,7 +1196,7 @@ h1 .coloredLetter {
 	
 	.containerPortfolioMobile .projSnip figcaption {
 		padding: 25px;
-		background-color: #000;
+		background-color: #0a0a0a;
 		color: #ccc;
 	}
 	
@@ -1245,7 +1249,7 @@ h1 .coloredLetter {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: #111;
+	background: #0a0a0a;
 	opacity: 0;
 	display: none;
 	z-index: 1000;
